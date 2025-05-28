@@ -1,0 +1,49 @@
+redirectsOrigin = "config"
+plugins = []
+functionsDirectory = "C:\\Users\\cliente\\Desktop\\FOODBOT1\\project\\netlify\\functions\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+
+[dev]
+command = "npm run dev"
+port = 5173.0
+targetPort = 5173.0
+framework = "vite"
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\cliente\\Desktop\\FOODBOT1\\project\\netlify\\functions\\dist"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "C:\\Users\\cliente\\Desktop\\FOODBOT1\\project\\netlify\\functions"
+command = "npm run build"
+functions = "C:\\Users\\cliente\\Desktop\\FOODBOT1\\project\\netlify\\functions\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
